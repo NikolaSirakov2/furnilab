@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "impact01";
+  src: url(/fonts/IMPACT.TTF);
+}
+
+.impact {
+  font-family: "impact01", sans-serif !important;
+}

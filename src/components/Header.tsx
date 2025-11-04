@@ -1,5 +1,5 @@
 import NavBtn from "./NavBtn";
-import { Phone } from "lucide-react";
+import { Phone, Menu } from "lucide-react";
 
 const Header = () => {
   return (
@@ -18,11 +18,13 @@ const Header = () => {
           <NavBtn>Service</NavBtn>
         </nav>
         {/* Contact Button */}
-        <button className="flex items-center space-x-2 bg-zinc-900 text-white text-sm py-4 px-6 rounded-full cursor-pointer transition-all duration-150 ease-in ml-4 hover:bg-transparent border border-zinc-900 hover:text-zinc-900">
+        <button className="hidden lg:flex items-center space-x-2 bg-zinc-900 text-white text-sm py-4 px-6 rounded-full cursor-pointer transition-all duration-150 ease-in ml-4 hover:bg-transparent border border-zinc-900 hover:text-zinc-900">
           <Phone size={16} />
         </button>
         {/* Mobile Menu Icon */}
-        <div className=""></div>
+        <div className="lg:hidden">
+          <Menu className="size-10 text-zinc-900" />
+        </div>
       </div>
     </header>
   );

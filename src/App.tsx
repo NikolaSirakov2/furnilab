@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 const App = () => {
   return (
@@ -6,7 +7,9 @@ const App = () => {
       <Header />
 
       {/* Main */}
-      <main>{/* Sections */}</main>
+      <main>
+        <Hero />
+      </main>
 
       {/* Footer */}
     </div>

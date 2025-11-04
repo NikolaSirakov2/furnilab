@@ -8,3 +8,17 @@
 .impact {
   font-family: "impact01", sans-serif !important;
 }
+
+/* Animations Extension */
+:root {
+  --animate-wiggle: wiggle 2s ease-out infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+.animate-wiggle {
+  animation: wiggle 2s ease-out infinite;
+}

@@ -11,7 +11,7 @@ const ProductCard = ({ price, position, src }: ProductCardProps) => {
       <div
         className={`absolute ${position} bg-white/90 z-99 hover:bg-zinc-800 hover:text-zinc-100 ease-in transition-all duration-150 text-zinc-900 text-base font-semibold rounded-full px-8 py-4`}
       >
-        {price}
+        €{price}
       </div>
       {/* Image Display */}
       {src ? (

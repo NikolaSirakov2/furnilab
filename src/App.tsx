@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Trending from "./components/Trending";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <main>
         <Hero />
         <hr className="text-zinc-300" />
+        <Trending />
       </main>
 
       {/* Footer */}

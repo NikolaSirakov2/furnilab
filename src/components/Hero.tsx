@@ -28,7 +28,7 @@ const Hero = () => {
         </div>
         {/* Right Content */}
         <div className="">
-          <HeroImage />
+          <HeroImage src="/hero-image.png" />
         </div>
       </div>
     </section>

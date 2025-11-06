@@ -14,11 +14,11 @@ const Trending = () => {
       </div>
       {/* GRID */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <ProductCard price="550" src="/sofa.png" position="bottom-4 left-4" />
-        <ProductCard price="1000" src="/sofa.png" position="bottom-4 left-4" />
+        <ProductCard price="550" src="/desk.png" position="bottom-4 left-4" />
+        <ProductCard price="1000" src="/sofa2.png" position="bottom-4 left-4" />
         <ProductCard price="260" src="/sofa.png" position="bottom-4 left-4" />
         <div className="hidden md:block">
-          <ProductCard price="750" src="/sofa.png" position="bottom-4 left-4" />
+          <ProductCard price="100" src="/lamp.png" position="bottom-4 left-4" />
         </div>
       </div>
       {/* HEADER AND TEXT */}

@@ -8,7 +8,7 @@ const Hero = () => {
         {/* Left Content */}
         <div className="lg:w-1/2">
           {/* Main Title: Large Bold */}
-          <h1 className="text-7xl sm:text-8xl font-extrabold leading-none mb-6">
+          <h1 className="text-5xl sm:text-8xl font-extrabold leading-none mb-6">
             <span className="block impact lg:text-[240px]">FINE</span>
             <span className="block impact lg:text-[230px] tracking-tight lg:mt-10">
               FURNISHINGS
@@ -21,7 +21,7 @@ const Hero = () => {
             fine furnishing.
           </div>
           {/* CTA Button */}
-          <button className="group flex items-center space-x- bg-zinc-900 text-white text-sm font-semibold py-4 rounded-full transition-all duration-150 hover:bg-transparent border border-zinc-900 hover:text-zinc-900 ease-in lg:absolute lg:text-lg lg:py-5 lg:px-10 bottom-10 right-10 hover:animate-wiggle">
+          <button className="group flex items-center space-x- bg-zinc-900 text-white text-sm font-semibold py-4 px-4 rounded-full transition-all duration-150 hover:bg-transparent border border-zinc-900 hover:text-zinc-900 ease-in lg:absolute lg:text-lg lg:py-5 lg:px-10 bottom-10 right-10 hover:animate-wiggle">
             <span>Shop Now</span>
             <ArrowRight size={20} className="" />
           </button>

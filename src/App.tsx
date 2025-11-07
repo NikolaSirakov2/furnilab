@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Trending from "./components/Trending";
 import NewArrivals from "./components/NewArrivals";
+import ShopByRoom from "./components/ShopByRoom";
 
 const App = () => {
   return (
@@ -16,6 +17,8 @@ const App = () => {
         <Trending />
         <hr className="text-zinc-300" />
         <NewArrivals />
+        <hr className="text-zinc-300" />
+        <ShopByRoom />
       </main>
 
       {/* Footer */}

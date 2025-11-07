@@ -15,10 +15,107 @@
 }
 
 @keyframes wiggle {
-  0%, 100% { transform: rotate(-3deg); }
-  50% { transform: rotate(3deg); }
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
 }
 
 .animate-wiggle {
   animation: wiggle 2s ease-out infinite;
+}
+
+.centered-row {
+  display: flex;
+  align-items: center;
+}
+
+.mirror-x {
+  transform: scaleX(-1);
+}
+
+.btn-hover {
+  transition-property: all;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-hover:hover {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(82, 82, 91);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.heading-2 {
+  margin-bottom: 3rem;
+  font-size: 3.75rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+  .heading-2 {
+    font-size: 8rem;
+    line-height: 1;
+  }
+}
+
+.transition2 {
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.glass {
+  background-color: rgba(10, 10, 10, 0.8);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.card-hover {
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  cursor: pointer;
+}
+
+.card-hover:hover {
+  transform: translateY(-0.5rem);
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.black-text {
+  color: rgba(113, 113, 122, 0.9);
+}
+
+.line-bottom {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(113, 113, 122, 0.4);
+}
+
+.center-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grad-text {
+  color: transparent;
+  background-image: linear-gradient(
+    to top right,
+    var(--grad-start, rgba(255, 255, 255, 1)),
+    var(--grad-end, rgba(255, 255, 255, 0))
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
 }

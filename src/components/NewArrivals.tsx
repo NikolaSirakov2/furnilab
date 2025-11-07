@@ -12,7 +12,7 @@ const NewArrivals = () => {
         <div className="lg:col-span-2">
           <div className="flex flex-col-reverse card-hover">
             {/* Image PlaceHolder */}
-            <BigImage src="/table.png" />
+            <BigImage src="/armchair.png" />
             {/* Text Content */}
             <div className="mt-6 md:mt-0 pt-4 flex justify-between">
               <div>
@@ -33,7 +33,7 @@ const NewArrivals = () => {
           {/* Small Card 1 */}
           <div className="flex flex-col lg:w-1/2 card-hover">
             {/* Image Placeholder */}
-            <SmallImage src="/lamp.png" />
+            <SmallImage src="/recliner.png" />
             {/* Text Details */}
             <div className="w-full flex justify-between pt-2">
               <div>
@@ -51,7 +51,7 @@ const NewArrivals = () => {
           {/* Small Card 2 */}
           <div className="flex flex-col lg:w-1/2 lg:mt-50 card-hover">
             {/* Image Placeholder */}
-            <SmallImage src="/sofa.png" />
+            <SmallImage src="/bookshelf.png" />
             {/* Text Details */}
             <div className="w-full flex justify-between pt-2">
               <div>

@@ -17,13 +17,15 @@ const NewArrivals = () => {
             <div className="mt-6 md:mt-0 pt-4 flex justify-between">
               <div>
                 <p className="text-lg uppercase font-bold text-zinc-600">
-                  The Finest Collection
+                  Plush Comfort Seating
                 </p>
-                <h3 className="text-lg font-bold mb-4">Options, Starting</h3>
+                <h3 className="text-lg font-bold mb-4">
+                  Sierra Lounge Armchair
+                </h3>
               </div>
               <div>
-                <p className="text-xl font-extrabold mb-1 text-right">$1,000</p>
-                <p className="text-sm text-zinc-500 text-right">10+ variants</p>
+                <p className="text-xl font-extrabold mb-1 text-right">$899</p>
+                <p className="text-sm text-zinc-500 text-right">6 colorways</p>
               </div>
             </div>
           </div>
@@ -37,13 +39,13 @@ const NewArrivals = () => {
             {/* Text Details */}
             <div className="w-full flex justify-between pt-2">
               <div>
-                <h4 className="text-xl uppercase font-bold">Coffee Table</h4>
-                <p className="text-base text-zinc-600 mb-1">Starting</p>
+                <h4 className="text-xl uppercase font-bold">Willow Recliner</h4>
+                <p className="text-base text-zinc-600 mb-1">Includes ottoman</p>
               </div>
               <div>
-                <p className="text-xl font-semibold text-right">$350</p>
+                <p className="text-xl font-semibold text-right">$620</p>
                 <p className="text-base text-zinc-500 text-right">
-                  20+ Variants
+                  4 recline modes
                 </p>
               </div>
             </div>
@@ -55,18 +57,26 @@ const NewArrivals = () => {
             {/* Text Details */}
             <div className="w-full flex justify-between pt-2">
               <div>
-                <h4 className="text-xl uppercase font-bold">Coffee Table</h4>
-                <p className="text-base text-zinc-600 mb-1">Starting</p>
+                <h4 className="text-xl uppercase font-bold">Atlas Bookshelf</h4>
+                <p className="text-base text-zinc-600 mb-1">Modular shelves</p>
               </div>
               <div>
-                <p className="text-xl font-semibold text-right">$350</p>
+                <p className="text-xl font-semibold text-right">$480</p>
                 <p className="text-base text-zinc-500 text-right">
-                  20+ Variants
+                  3 wood finishes
                 </p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center mt-12 lg:mt-15">
+        <button
+          className="text-base lg:text-lg font-medium border border-zinc-900 text-zinc-900 px-6 lg:px-8 py-3 rounded-full cursor-pointer hover:bg-zinc-900 hover:text-zinc-100 transition-all ease-in duration-200 hover:animate-wiggle"
+          type="button"
+        >
+          Explore
+        </button>
       </div>
     </section>
   );

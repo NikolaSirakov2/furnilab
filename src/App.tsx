@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Trending from "./components/Trending";
 import NewArrivals from "./components/NewArrivals";
 import ShopByRoom from "./components/ShopByRoom";
+import { GetInspired } from "./components/GetInspired";
 
 const App = () => {
   return (
@@ -19,6 +20,8 @@ const App = () => {
         <NewArrivals />
         <hr className="text-zinc-300" />
         <ShopByRoom />
+        <hr className="text-zinc-300" />
+        <GetInspired />
       </main>
 
       {/* Footer */}

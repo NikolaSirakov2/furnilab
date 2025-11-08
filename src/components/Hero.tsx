@@ -9,8 +9,10 @@ const Hero = () => {
         <div className="lg:w-1/2">
           {/* Main Title: Large Bold */}
           <h1 className="text-[clamp(3.75rem,14vw,12rem)] font-extrabold leading-none mb-6">
-            <span className="block impact lg:text-[320px]">FINE</span>
-            <span className="block impact lg:text-[305px] tracking-tight lg:mt-10">
+            <span className="hero-sequence hero-sequence-1 block impact lg:text-[320px]">
+              FINE
+            </span>
+            <span className="hero-sequence hero-sequence-2 block impact lg:text-[305px] tracking-tight lg:mt-10">
               FURNISHINGS
             </span>
           </h1>
@@ -27,12 +29,11 @@ const Hero = () => {
           </button>
         </div>
         {/* Right Content */}
-        <div className="">
-          <HeroImage
-            src="/hero-image.png"
-            alt="Neutral-toned living room with modern furniture"
-          />
-        </div>
+        <HeroImage
+          className="hero-sequence hero-sequence-3"
+          src="/hero-image.png"
+          alt="Neutral-toned living room with modern furniture"
+        />
       </div>
     </section>
   );

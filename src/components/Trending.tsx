@@ -2,7 +2,7 @@ import ProductCard from "./ProductCard";
 
 const Trending = () => {
   return (
-    <section className="max-w-[1600px] mx-auto p-4 sm:p-8 mt-20 mb-20">
+    <section className="max-w-[1350px] 2xl:max-w-[1600px] mx-auto p-4 sm:p-8 mt-20 mb-20">
       {/* TITLE */}
       <div className="relative flex justify-between items-end mb-12">
         <h2 className="text-5xl lg:text-9xl impact uppercase text-nowrap leading-tighter">

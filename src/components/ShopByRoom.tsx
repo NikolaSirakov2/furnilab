@@ -22,7 +22,7 @@ const ShopByRoom = () => {
   }
 
   return (
-    <section className="relative max-w-[1600px] mx-auto p-4 sm:p-8 mt-20 mb-20">
+    <section className="relative max-w-[1350px] 2xl:max-w-[1600px] mx-auto p-4 sm:p-8 mt-20 mb-20">
       <h2 className="heading-2 impact">
         BEST SHOP BY <br /> ROOM
       </h2>

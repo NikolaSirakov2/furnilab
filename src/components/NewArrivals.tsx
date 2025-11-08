@@ -3,7 +3,7 @@ import { SmallImage } from "./SmallImage";
 
 const NewArrivals = () => {
   return (
-    <section className="max-w-[1600px] mx-auto p-4 sm:p-8 mt-20 mb-20">
+    <section className="max-w-[1350px] 2xl:max-w-[1600px] mx-auto p-4 sm:p-8 mt-20 mb-20">
       <h2 className="text-6xl lg:text-9xl impact uppercase leading-tight mb-12">
         NEW ARRIVAL
       </h2>

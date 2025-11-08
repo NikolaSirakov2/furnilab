@@ -29,7 +29,7 @@ function renderGalleryImage(
 
 export function GalleryPage(): ReactElement {
   return (
-    <section className="max-w-[1600px] mt-30 mx-auto p-4 sm:p-8 mb-20">
+    <section className="max-w-[1350px] 2xl:max-w-[1600px] mt-30 mx-auto p-4 sm:p-8 mb-20">
       <div className="space-y-10">
         <header className="space-y-4">
           <p className="text-xs tracking-[0.45em] uppercase text-zinc-500">

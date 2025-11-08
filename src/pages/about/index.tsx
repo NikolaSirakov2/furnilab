@@ -22,7 +22,7 @@ const ABOUT_HIGHLIGHTS = [
 
 export function AboutPage(): ReactElement {
   return (
-    <section className="max-w-[1600px] mt-30 mx-auto p-4 sm:p-8 mb-20">
+    <section className="max-w-[1350px] 2xl:max-w-[1600px] mt-30 mx-auto p-4 sm:p-8 mb-20">
       <div className="flex relative flex-col lg:flex-row lg:space-x-12 overflow-x-clip">
         <div className="lg:w-1/2 space-y-8">
           <header>
@@ -65,7 +65,7 @@ export function AboutPage(): ReactElement {
           </button>
         </div>
         <AboutImage
-          className="hero-sequence hero-sequence-3 lg:mt-[20vw]"
+          className="hero-sequence hero-sequence-3 lg:mt-[25vw] 2xl:mt-[20vw]"
           src="/modern-room.png"
           alt="Modern living room vignette from Furnilab showroom"
         />

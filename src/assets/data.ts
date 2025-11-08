@@ -1,3 +1,6 @@
+import modernRoom from "/modern-room.png";
+import retroRoom from "/retro-room.png";
+
 interface InspirationProduct {
   src: string;
   name: string;
@@ -10,12 +13,12 @@ interface RoomDetail {
 
 const inspirationProducts: InspirationProduct[] = [
   {
-    src: "https://images.unsplash.com/photo-1571898223382-0aa3499f0f2a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: modernRoom,
     name: "Modern Collection 2025",
   },
   {
-    src: "https://images.unsplash.com/photo-1579656592043-a20e25a4aa4b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Luxury Furniture 2026",
+    src: retroRoom,
+    name: "Retro Collection 1980s",
   },
 ];
 
@@ -44,4 +47,3 @@ const roomDetails: RoomDetail[] = [
 
 export type { InspirationProduct, RoomDetail };
 export { inspirationProducts, roomDetails };
-

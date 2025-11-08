@@ -1,12 +1,16 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "impact01";
-  src: url(/fonts/IMPACT.TTF);
+  font-family: "Impact";
+  src: url("/fonts/IMPACT.TTF") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 .impact {
-  font-family: "impact01", sans-serif !important;
+  font-family: "Impact", sans-serif !important;
+  font-synthesis: none;
 }
 
 /* Animations Extension */
@@ -57,6 +61,8 @@
   font-size: 3.75rem;
   line-height: 1.25;
   text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: -0.02em;
 }
 
 @media (min-width: 1024px) {

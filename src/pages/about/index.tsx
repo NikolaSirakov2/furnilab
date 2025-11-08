@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import { ArrowRight } from "lucide-react";
-import HeroImage from "../../components/HeroImage";
+import AboutImage from "../../components/AboutImage";
 
 const ABOUT_HIGHLIGHTS = [
   {
@@ -53,7 +53,9 @@ export function AboutPage(): ReactElement {
                 <h2 className="text-lg font-semibold tracking-wide text-zinc-900 uppercase mb-2">
                   {title}
                 </h2>
-                <p className="text-sm lg:text-base text-zinc-600">{description}</p>
+                <p className="text-sm lg:text-base text-zinc-600 pl-10">
+                  {description}
+                </p>
               </li>
             ))}
           </ul>
@@ -62,8 +64,8 @@ export function AboutPage(): ReactElement {
             <ArrowRight size={20} />
           </button>
         </div>
-        <HeroImage
-          className="hero-sequence hero-sequence-3"
+        <AboutImage
+          className="hero-sequence hero-sequence-3 lg:mt-[20vw]"
           src="/modern-room.png"
           alt="Modern living room vignette from Furnilab showroom"
         />
@@ -71,5 +73,3 @@ export function AboutPage(): ReactElement {
     </section>
   );
 }
-
-

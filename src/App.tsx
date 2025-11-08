@@ -4,6 +4,7 @@ import Trending from "./components/Trending";
 import NewArrivals from "./components/NewArrivals";
 import ShopByRoom from "./components/ShopByRoom";
 import { GetInspired } from "./components/GetInspired";
+import { Footer } from "./components/Footer";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       </main>
 
       {/* Footer */}
+      <Footer />
     </div>
   );
 };

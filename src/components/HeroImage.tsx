@@ -39,4 +39,3 @@ const HeroImage = ({ src, alt, className }: HeroImageProps) => {
 };
 
 export default HeroImage;
-

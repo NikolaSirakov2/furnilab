@@ -1,7 +1,7 @@
 import type { ReactElement } from "react";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 
-const MARQUEE_COPIES = 1;
+const MARQUEE_COPIES = 9;
 
 const SOCIAL_LINKS = [
   {
@@ -36,15 +36,17 @@ function renderMarqueeCopy(index: number): ReactElement {
 export function Footer(): ReactElement {
   return (
     <footer className="bg-zinc-950 text-white">
-      <div className="relative max-w-7xl mx-auto p-4 sm:p-8 py-18 lg:py-24 overflow-hidden">
+      <div className="relative max-w-[1600px] items-center mx-auto p-4 sm:p-8 py-18 lg:py-24 overflow-hidden">
+        <div className="flex min-w-full whitespace-nowrap animate-marquee">
+          {Array.from({ length: MARQUEE_COPIES }, (_, index) =>
+            renderMarqueeCopy(index)
+          )}
+        </div>
         <img
-          src="/images/sofa.png"
+          src="/sofa.png"
           alt="Sofa illustration"
           className="bottom-0 left-1/2 -translate-x-1/2 lg:w-[400px] mt-10 lg:mt-0 absolute hover:animate-wiggle duration-700 ease-in-out cursor-pointer"
         />
-        {Array.from({ length: MARQUEE_COPIES }, (_, index) =>
-          renderMarqueeCopy(index)
-        )}
       </div>
       <div className="border-t border-zinc-800 py-6 lg:py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 text-sm">

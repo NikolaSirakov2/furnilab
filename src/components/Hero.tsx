@@ -8,9 +8,9 @@ const Hero = () => {
         {/* Left Content */}
         <div className="lg:w-1/2">
           {/* Main Title: Large Bold */}
-          <h1 className="text-5xl sm:text-8xl font-extrabold leading-none mb-6">
-            <span className="block impact lg:text-[240px]">FINE</span>
-            <span className="block impact lg:text-[230px] tracking-tight lg:mt-10">
+          <h1 className="text-[clamp(3.75rem,14vw,12rem)] font-extrabold leading-none mb-6">
+            <span className="block impact lg:text-[320px]">FINE</span>
+            <span className="block impact lg:text-[305px] tracking-tight lg:mt-10">
               FURNISHINGS
             </span>
           </h1>
@@ -28,7 +28,10 @@ const Hero = () => {
         </div>
         {/* Right Content */}
         <div className="">
-          <HeroImage src="/hero-image.png" />
+          <HeroImage
+            src="/hero-image.png"
+            alt="Neutral-toned living room with modern furniture"
+          />
         </div>
       </div>
     </section>

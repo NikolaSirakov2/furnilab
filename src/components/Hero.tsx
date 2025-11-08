@@ -3,7 +3,7 @@ import HeroImage from "./HeroImage";
 
 const Hero = () => {
   return (
-    <section className="max-w-[1600px] mt-30 mx-auto p-4 sm:p-8 mb-20">
+    <section className="max-w-[1350px] 2xl:max-w-[1600px] mt-30 mx-auto p-4 sm:p-8 mb-20">
       <div className="flex relative flex-col lg:flex-row lg:space-x-12 overflow-x-clip">
         {/* Left Content */}
         <div className="lg:w-1/2">
@@ -12,7 +12,7 @@ const Hero = () => {
             <span className="hero-sequence hero-sequence-1 block impact lg:text-[320px]">
               FINE
             </span>
-            <span className="hero-sequence hero-sequence-2 block impact lg:text-[305px] tracking-tight lg:mt-10">
+            <span className="hero-sequence hero-sequence-2 block impact text-[255px] 2xl:text-[305px] tracking-tight lg:mt-10">
               FURNISHINGS
             </span>
           </h1>

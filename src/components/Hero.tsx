@@ -12,7 +12,7 @@ const Hero = () => {
             <span className="hero-sequence hero-sequence-1 block impact lg:text-[320px]">
               FINE
             </span>
-            <span className="hero-sequence hero-sequence-2 block impact text-[255px] 2xl:text-[305px] tracking-tight lg:mt-10">
+            <span className="hero-sequence hero-sequence-2 block impact lg:text-[255px] 2xl:text-[305px] tracking-tight lg:mt-10">
               FURNISHINGS
             </span>
           </h1>

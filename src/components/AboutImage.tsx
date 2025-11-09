@@ -8,22 +8,29 @@ interface AboutImageProps {
   contentHeightClassName?: string;
 }
 
-const AboutImage = ({
+function AboutImage({
   src,
   alt,
   className,
   containerWidthClassName,
   contentHeightClassName,
-}: AboutImageProps) => {
-  const { dictionary } = useLanguage();
+}: AboutImageProps) {
+  const { dictionary, language } = useLanguage();
   const containerClasses = ["mt-10 lg:mt-0 lg:relative"];
   const contentClasses = ["hero-aspect w-full rounded-3xl"];
+  const isBulgarian = language === "bg";
 
   containerClasses.push(
-    containerWidthClassName ?? "lg:w-[66%] xl:w-[60.5%]",
+    containerWidthClassName ??
+      (isBulgarian
+        ? "lg:w-[52%] xl:w-[45%] 2xl:w-[38%]"
+        : "lg:w-[66%] xl:w-[60.5%]")
   );
   contentClasses.push(
-    contentHeightClassName ?? "lg:h-[374px] xl:h-[374px]",
+    contentHeightClassName ??
+      (isBulgarian
+        ? "lg:h-[420px] xl:h-[480px] 2xl:h-[438px]"
+        : "lg:h-[374px] xl:h-[374px] 2xl:h-[416px]")
   );
 
   if (className) {
@@ -49,7 +56,7 @@ const AboutImage = ({
     <div className={containerClasses.join(" ")}>
       <div
         className={["group relative overflow-hidden", ...contentClasses].join(
-          " ",
+          " "
         )}
       >
         <img
@@ -62,7 +69,6 @@ const AboutImage = ({
       </div>
     </div>
   );
-};
+}
 
 export default AboutImage;
-

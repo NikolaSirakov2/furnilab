@@ -12,7 +12,7 @@ export function AboutPage(): ReactElement {
       <div className="flex relative flex-col lg:flex-row lg:space-x-12 overflow-x-clip">
         <div className="lg:w-1/2 space-y-8">
           <header>
-            <p className="text-xs tracking-[0.45em] uppercase text-zinc-500 mb-4">
+            <p className="text-xs tracking-[0.45em] uppercase text-zinc-500 mb-4 lg:ml-4">
               {copy.label}
             </p>
             <h1 className="text-[clamp(3.75rem,14vw,12rem)] font-extrabold leading-none">

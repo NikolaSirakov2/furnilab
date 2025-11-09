@@ -1,63 +1,76 @@
+export type GalleryImageKey =
+  | "armchair"
+  | "bookshelf"
+  | "desk"
+  | "lounge"
+  | "lamp"
+  | "modernRoom"
+  | "recliner"
+  | "retroRoom"
+  | "sofa"
+  | "sofa2"
+  | "table";
+
 export interface GalleryImage {
   src: string;
-  alt: string;
+  altKey: GalleryImageKey;
   orientation: "portrait" | "landscape";
 }
 
 export const galleryImages: GalleryImage[] = [
   {
     src: "/armchair.png",
-    alt: "Olive green armchair with rounded silhouette",
+    altKey: "armchair",
     orientation: "portrait",
   },
   {
     src: "/bookshelf.png",
-    alt: "Walnut bookshelf with asymmetrical shelving",
+    altKey: "bookshelf",
     orientation: "portrait",
   },
   {
     src: "/desk.png",
-    alt: "Minimal study desk with integrated storage drawers",
+    altKey: "desk",
     orientation: "landscape",
   },
   {
     src: "/hero-image.png",
-    alt: "Neutral-toned lounge with layered textures",
+    altKey: "lounge",
     orientation: "landscape",
   },
   {
     src: "/lamp.png",
-    alt: "Matte black arc floor lamp with globe shade",
+    altKey: "lamp",
     orientation: "portrait",
   },
   {
     src: "/modern-room.png",
-    alt: "Warm neutral living room anchored by a sectional sofa",
+    altKey: "modernRoom",
     orientation: "landscape",
   },
   {
     src: "/recliner.png",
-    alt: "Tufted leather recliner with brass base",
+    altKey: "recliner",
     orientation: "portrait",
   },
   {
     src: "/retro-room.png",
-    alt: "Retro inspired living room with bold colors",
+    altKey: "retroRoom",
     orientation: "landscape",
   },
   {
     src: "/sofa.png",
-    alt: "Camel leather sofa styled with cozy throws",
+    altKey: "sofa",
     orientation: "landscape",
   },
   {
     src: "/sofa2.png",
-    alt: "Curved modular sofa in a sunlit loft",
+    altKey: "sofa2",
     orientation: "landscape",
   },
   {
     src: "/table.png",
-    alt: "Round dining table with sculptural base",
+    altKey: "table",
     orientation: "portrait",
   },
 ];

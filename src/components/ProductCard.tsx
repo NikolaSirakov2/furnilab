@@ -1,3 +1,5 @@
+import { useLanguage } from "../i18n/LanguageContext";
+
 interface ProductCardProps {
   price: string;
   position?: string;
@@ -5,6 +7,8 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ price, position, src }: ProductCardProps) => {
+  const { dictionary } = useLanguage();
+
   return (
     <div className="relative overflow-clip saturate-120 bg-zinc-200 w-full cursor-pointer transition-all duration-200 hover:-translate-y-1.5 ease-in lg:w-[95%] h-[480px] lg:h-[500px] flex items-center justify-center text-zinc-500">
       {/* Price Tag Overlay */}
@@ -17,11 +21,11 @@ const ProductCard = ({ price, position, src }: ProductCardProps) => {
       {src ? (
         <img
           src={src}
-          alt="interior-image"
+          alt={dictionary.productCard.fallback}
           className="w-full object-cover hover:scale-105 transition-all duration-600 ease-in-out"
         />
       ) : (
-        <span>Product Image</span>
+        <span>{dictionary.productCard.fallback}</span>
       )}
     </div>
   );

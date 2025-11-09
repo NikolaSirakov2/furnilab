@@ -1,4 +1,5 @@
 import type { CSSProperties, ReactElement } from "react";
+import { useLanguage } from "../i18n/LanguageContext";
 
 interface InspiredCardProps {
   name: string;
@@ -47,15 +48,17 @@ function getImageWrapperStyle(src?: string): CSSProperties | undefined {
 }
 
 export function InspiredCard({ name, src }: InspiredCardProps): ReactElement {
+  const { dictionary } = useLanguage();
+
   return (
     <div className="">
       <div
-        aria-label={src ? `${name} inspiration` : "Image placeholder"}
+        aria-label={src ? name : dictionary.inspiredCard.placeholder}
         className={getImageWrapperClassName(src)}
         role="img"
         style={getImageWrapperStyle(src)}
       >
-        {!src && "Image Placeholder"}
+        {!src && dictionary.inspiredCard.placeholder}
       </div>
       <p className="text-xl lg:text-2xl text-center font-semibold mt-4 mb-2 p-2">
         {name}

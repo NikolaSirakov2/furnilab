@@ -4,23 +4,26 @@ import { Footer } from "./components/Footer";
 import { HomePage } from "./pages/home";
 import { AboutPage } from "./pages/about";
 import { GalleryPage } from "./pages/gallery";
+import { LanguageProvider } from "./i18n/LanguageContext";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className="min-h-screen overflow-x-hidden">
-        <Header />
-        <hr className="text-zinc-300 -mt-4" />
-        <main>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/gallery" element={<GalleryPage />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <LanguageProvider>
+      <BrowserRouter>
+        <div className="min-h-screen overflow-x-hidden">
+          <Header />
+          <hr className="text-zinc-300 -mt-4" />
+          <main>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/gallery" element={<GalleryPage />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </LanguageProvider>
   );
 };
 

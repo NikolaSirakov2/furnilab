@@ -2,8 +2,10 @@ import { useState } from "react";
 
 import { roomDetails, type RoomDetail } from "../assets/data";
 import { RoomLink } from "./RoomLink";
+import { useLanguage } from "../i18n/LanguageContext";
 
 const ShopByRoom = () => {
+  const { dictionary } = useLanguage();
   const rooms = roomDetails;
 
   const defaultRoom = rooms[0] ?? null;
@@ -21,20 +23,24 @@ const ShopByRoom = () => {
     return null;
   }
 
+  const activeRoomLabel = activeRoom
+    ? dictionary.shopByRoom.rooms[activeRoom.translationKey]
+    : "";
+
   return (
     <section className="relative max-w-[1350px] 2xl:max-w-[1600px] mx-auto p-4 sm:p-8 mt-20 mb-20">
-      <h2 className="heading-2 impact">
-        BEST SHOP BY <br /> ROOM
+      <h2 className="heading-2 impact whitespace-pre-line">
+        {dictionary.shopByRoom.heading}
       </h2>
       <div className="flex flex-col lg:flex-row lg:space-x-20">
         <div className="lg:w-1/3">
           {rooms.map((room) => (
             <RoomLink
-              key={room.name}
+              key={room.translationKey}
               onMouseEnter={() => handleMouseEnter(room)}
               onMouseLeave={handleMouseLeave}
             >
-              {room.name}
+              {dictionary.shopByRoom.rooms[room.translationKey]}
             </RoomLink>
           ))}
         </div>
@@ -46,13 +52,13 @@ const ShopByRoom = () => {
           />
           <img
             src={activeRoom?.src}
-            alt={activeRoom?.name}
+            alt={activeRoomLabel}
             className="relative z-0 h-[420px] w-full rounded-3xl object-cover"
             loading="lazy"
           />
           <div className="absolute bottom-8 left-8 z-20 rounded-full border border-white/40 bg-white/20 px-6 py-3 backdrop-blur-md">
             <p className="text-lg font-semibold text-white tracking-wide">
-              {activeRoom?.name}
+              {activeRoomLabel}
             </p>
           </div>
         </div>

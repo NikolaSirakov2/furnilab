@@ -1,5 +1,6 @@
 import type { ReactElement } from "react";
 import { galleryImages } from "../../assets/gallery-images";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 function renderGalleryImage(
   src: string,
@@ -28,25 +29,29 @@ function renderGalleryImage(
 }
 
 export function GalleryPage(): ReactElement {
+  const { dictionary } = useLanguage();
+
   return (
     <section className="max-w-[1350px] 2xl:max-w-[1600px] mt-30 mx-auto p-4 sm:p-8 mb-20">
       <div className="space-y-10">
         <header className="space-y-4">
           <p className="text-xs tracking-[0.45em] uppercase text-zinc-500">
-            Gallery
+            {dictionary.gallery.label}
           </p>
           <h1 className="text-[clamp(3.5rem,10vw,8rem)] impact font-extrabold leading-none text-zinc-900">
-            Crafted Scenes
+            {dictionary.gallery.heading}
           </h1>
           <p className="text-base lg:text-lg max-w-2xl text-zinc-600">
-            Explore every finish, upholstery, and silhouette from our seasonal
-            collections. Each capture is styled by our team to help you imagine
-            how the pieces layer into your own spaces.
+            {dictionary.gallery.description}
           </p>
         </header>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {galleryImages.map(({ src, alt, orientation }) =>
-            renderGalleryImage(src, alt, orientation)
+          {galleryImages.map(({ src, altKey, orientation }) =>
+            renderGalleryImage(
+              src,
+              dictionary.gallery.images[altKey],
+              orientation
+            )
           )}
         </div>
       </div>

@@ -1,3 +1,5 @@
+import { useLanguage } from "../i18n/LanguageContext";
+
 interface AboutImageProps {
   src?: string;
   alt?: string;
@@ -13,6 +15,7 @@ const AboutImage = ({
   containerWidthClassName,
   contentHeightClassName,
 }: AboutImageProps) => {
+  const { dictionary } = useLanguage();
   const containerClasses = ["mt-10 lg:mt-0 lg:relative"];
   const contentClasses = ["hero-aspect w-full rounded-3xl"];
 
@@ -36,7 +39,7 @@ const AboutImage = ({
             "bg-zinc-200 flex items-center justify-center text-zinc-500",
           ].join(" ")}
         >
-          <span className="text-lg">About Image Placeholder</span>
+          <span className="text-lg">{dictionary.aboutImage.placeholder}</span>
         </div>
       </div>
     );
@@ -51,7 +54,7 @@ const AboutImage = ({
       >
         <img
           src={src}
-          alt={alt ?? "Furnilab studio showcase"}
+          alt={alt ?? dictionary.aboutImage.fallbackAlt}
           className="h-full w-full object-cover saturate-125 transition-transform duration-500 ease-out group-hover:scale-110"
           loading="lazy"
         />

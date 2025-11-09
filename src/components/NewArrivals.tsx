@@ -14,11 +14,11 @@ const NewArrivals = () => {
       <div className="grid lg:grid-cols-4 gap-8">
         {/* Featured Large Image */}
         <div className="lg:col-span-2">
-          <div className="flex flex-col-reverse card-hover">
+          <div className="flex flex-col lg:flex-col-reverse card-hover">
             {/* Image PlaceHolder */}
             <BigImage src="/armchair.png" />
             {/* Text Content */}
-            <div className="mt-6 md:mt-0 pt-4 flex justify-between">
+            <div className="mt-6 lg:mt-0 pt-4 flex justify-between">
               <div>
                 <p className="text-lg uppercase font-bold text-zinc-600">
                   {copy.featured.tagline}

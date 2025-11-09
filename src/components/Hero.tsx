@@ -3,7 +3,11 @@ import HeroImage from "./HeroImage";
 import { useLanguage } from "../i18n/LanguageContext";
 
 const Hero = () => {
-  const { dictionary } = useLanguage();
+  const { dictionary, language } = useLanguage();
+  const heroImageClassName =
+    language === "bg"
+      ? "hero-sequence hero-sequence-3 lg:!w-[48%] xl:!w-[46%] 2xl:!w-[44%]"
+      : "hero-sequence hero-sequence-3";
 
   return (
     <section className="max-w-[1350px] 2xl:max-w-[1600px] mt-30 mx-auto p-4 sm:p-8 mb-20">
@@ -31,7 +35,7 @@ const Hero = () => {
         </div>
         {/* Right Content */}
         <HeroImage
-          className="hero-sequence hero-sequence-3"
+          className={heroImageClassName}
           src="/hero-image.png"
           alt={dictionary.hero.imageAlt}
         />

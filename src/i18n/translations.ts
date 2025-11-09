@@ -383,7 +383,7 @@ const translations: Record<Language, TranslationContent> = {
     about: {
       label: "За FurniLab",
       headingLine1: "СЪЗДАДЕНО",
-      headingLine2: "ЗА ЖИВОТА",
+      headingLine2: "ЗА ЖИВОТ",
       description:
         "FurniLab обединява дизайнери, майстори и куратори, които създават мебели с усещане за дом още от първия ден. Всяко изделие е премислено, за да пази спомени, да предразполага към разговор и да следва ритъма на вашия дом.",
       highlights: [
